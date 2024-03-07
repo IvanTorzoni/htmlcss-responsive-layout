@@ -1,3 +1,8 @@
+/* NB: ALL THE MEDIA QUERIES ARE IN THIS SHEET FOR NOW. AT THE END OF THE EXERCISE THEY WILL BE MOVED TO A SEPARATE SHEET */
+
+
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +10,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Layout */
+img{
+    max-width: 100%;
+
+}
+
+/* LAYOUT */
 
 .container {
     display: flex;
@@ -15,7 +25,8 @@
     margin: 0 auto;
 }
 
-/* utility */
+/* UTILITY */
+
 ul li{
     list-style-type: none;
 }
@@ -24,7 +35,7 @@ a {
     text-decoration: none;
 }
 
-/* Header */
+/* HEADER */
 header{
     position: fixed;
     top: 0;
@@ -34,6 +45,8 @@ header{
     background-color: rgba(0, 132, 253, 1)
 }
 
+
+
 .header i{
     color: white;
 }
@@ -42,10 +55,11 @@ header{
     display: none;
 }
 
+/* media query for desktop - HEADER */
 @media screen and (min-width: 992px) {
     .container{
-        width: 80%;
-        max-width: 1150px;
+        width: 80vw;
+        max-width: 1800px;
     }
     
     .header i{
@@ -70,3 +84,155 @@ header{
     }
 
 }
+/* /media query for tablet - HEADER */
+
+/* MAIN */
+
+/* feature section */
+.feature{
+    padding: 8rem 0;
+}
+
+/* columns division */
+
+/* column properties */
+.columns{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.columns p{
+    line-height: 2rem;
+    color: rgba(107, 131, 151, 1)
+}
+
+/* big column  */
+.col-big, .col{
+    border-radius: 20px;
+}
+
+.col-big{
+    padding: 30px 30px 0;
+    width: 100%;
+    background-color: rgba(181, 221, 255, 1);
+}
+
+.col-big h2, p{
+    padding-bottom: 30px;
+} 
+
+.col-big img{
+    padding-top: 30px;
+    height: 18rem;
+} 
+
+.col-big h2{
+    color: rgba(0, 132, 253, 1);
+}
+
+.col-big div{
+    text-align: center;
+}
+
+.col-big i{
+    padding-right: 20px;
+}
+
+.col-big a{
+    color: white;
+    background-color: rgba(0, 132, 253, 1);
+    padding: 10px;
+    border-radius: 20px;
+}
+/* /big column  */
+
+/* Other columns */
+.col{
+    width: 100%;
+    background-color: rgba(181, 221, 255, 1);
+    text-align: center;
+}
+
+.col i{
+    font-size: 7rem;
+}
+
+.col i, p, h2{
+    padding: 30px 30px;
+    
+}
+
+.col i, h2{
+    color: rgba(0, 132, 253, 1);
+}
+/* Other columns */
+
+/* media query for tablet - Feature Section */
+@media screen and (min-width: 768px) {
+    .columns{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .col-big{
+        width: 65%;
+        padding: 20px 20px 0;
+    }
+
+    .col-big img{
+        height: 20rem;
+    }
+
+    .col-big div{
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .col{
+        width: 30%;
+    }
+
+}
+/* /media query for tablet - Feature Section */
+
+/* media query for desktop - Feature Section */
+@media screen and (min-width: 992px) {
+
+    .col-big{
+        display: flex;
+        width: 65%;
+    }
+
+    .left-big-col{
+        width: 60%;
+    }
+
+    .right-big-col{
+        width: 40%;
+    }
+
+    .col-big img{
+        height: 18rem;
+    }
+
+    .col-big div{
+        padding-left: 0;
+    }
+
+    .col-big #btn-feature{
+        padding: 20px 0;
+    }
+
+    .col{
+        width: 30%;
+    }
+
+    .col i, p, h2{
+        padding: 10px 0px;    
+    }
+
+}
+/* /media query for tablet - Feature Section */
