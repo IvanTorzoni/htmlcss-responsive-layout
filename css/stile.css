@@ -25,6 +25,13 @@ img{
     margin: 0 auto;
 }
 
+.small-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem;
+    margin: 0 auto;
+}
+
 /* UTILITY */
 
 ul li{
@@ -58,8 +65,8 @@ header{
 /* media query for desktop - HEADER */
 @media screen and (min-width: 992px) {
     .container{
-        width: 80vw;
-        max-width: 1800px;
+        width: 80%;
+        max-width: 1400px;
     }
     
     .header i{
@@ -119,7 +126,7 @@ header{
     background-color: rgba(181, 221, 255, 1);
 }
 
-.col-big h2, p{
+.col-big>h2, p{
     padding-bottom: 30px;
 } 
 
@@ -161,7 +168,6 @@ header{
 
 .col i, p, h2{
     padding: 30px 30px;
-    
 }
 
 .col i, h2{
@@ -171,12 +177,14 @@ header{
 
 /* media query for tablet - Feature Section */
 @media screen and (min-width: 768px) {
+    /* column properties */
     .columns{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
+    /* big column  */
     .col-big{
         width: 65%;
         padding: 20px 20px 0;
@@ -191,6 +199,7 @@ header{
         text-align: left;
     }
 
+    /* Other columns */
     .col{
         width: 30%;
     }
@@ -200,7 +209,7 @@ header{
 
 /* media query for desktop - Feature Section */
 @media screen and (min-width: 992px) {
-
+    /* big column  */
     .col-big{
         display: flex;
         width: 65%;
@@ -230,9 +239,114 @@ header{
         width: 30%;
     }
 
+    /* Other columns */
     .col i, p, h2{
         padding: 10px 0px;    
     }
 
 }
 /* /media query for tablet - Feature Section */
+
+
+/* planning section */
+
+.planning{
+    background-color: rgba(151, 146, 228, 1);
+}
+
+.plannig-strategy img{
+    padding-top: 2rem;
+}
+
+.plannig-strategy h2{
+    padding: 0;
+    padding-top: 5rem;
+    color: white;
+}
+
+.plannig-strategy p{
+    padding: 0;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    color: white;
+    line-height: 2rem;
+}
+
+
+.app-development{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.app-dev-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.app-dev-content h2{
+    padding: 0;
+    padding-top: 2rem;
+    color: black;
+}
+
+.app-dev-content p{
+    padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: black;
+    line-height: 2rem;
+    font-style: italic;
+}
+
+.app-dev-content i{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: rgba(151, 146, 228, 1);
+}
+
+/* media query for desktop - planning section */
+@media screen and (min-width: 992px) {
+    .small-container{
+        position: relative;
+        width: 70%;
+        max-width: 1200px;
+        flex-direction: row;
+    }
+
+    .plannig-strategy{
+        width: 60%;
+    }
+
+    .plannig-strategy img{
+        width: 80%;
+    }
+
+    .plannig-strategy p{
+        width: 90%;
+    }
+
+    .app-development{
+        width: 40%;
+        justify-content: flex-end;
+    }
+
+    .app-development h2{
+        padding-top: 1rem;
+    }
+
+    .app-development p{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+/* /media query for desktop - planning section */
+
