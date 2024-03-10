@@ -45,7 +45,8 @@
     }
 
     .col-big img{
-        height: 20rem;
+        width: 80%;
+        object-fit: contain;
     }
 
     .col-big div{
@@ -78,11 +79,17 @@
     }
 
     .col-big img{
-        height: 18rem;
+        width: 100%;
+        min-width: 220px;
+        object-fit: contain;
     }
 
     .col-big div{
         padding-left: 0;
+    }
+
+    .col-big p{
+        text-align: left;
     }
 
     .col-big #btn-feature{
