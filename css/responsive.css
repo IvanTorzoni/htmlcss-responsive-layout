@@ -1,0 +1,253 @@
+/* media query for desktop - HEADER */
+@media screen and (min-width: 992px) {
+    .container{
+        width: 80%;
+        max-width: 1400px;
+    }
+    
+    .header i{
+        display: none;
+    }
+
+    .nav-menu{
+        display: flex;
+        align-items: center;
+        gap: 1.3rem;
+    }
+
+    li a{
+        color: white;
+    }
+
+    .btn-header{
+        color: black;
+        background-color: white;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+}
+/* /media query for tablet - HEADER */
+
+/* media query for tablet - Feature Section */
+@media screen and (min-width: 768px) {
+    /* column properties */
+    .columns{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* big column  */
+    .col-big{
+        width: 65%;
+        padding: 20px 20px 0;
+    }
+
+    .col-big img{
+        height: 20rem;
+    }
+
+    .col-big div{
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    /* Other columns */
+    .col{
+        width: 30%;
+    }
+
+}
+/* /media query for tablet - Feature Section */
+
+/* media query for desktop - Feature Section */
+@media screen and (min-width: 992px) {
+    /* big column  */
+    .col-big{
+        display: flex;
+        width: 65%;
+    }
+
+    .left-big-col{
+        width: 60%;
+    }
+
+    .right-big-col{
+        width: 40%;
+    }
+
+    .col-big img{
+        height: 18rem;
+    }
+
+    .col-big div{
+        padding-left: 0;
+    }
+
+    .col-big #btn-feature{
+        padding: 20px 0;
+    }
+
+    .col{
+        width: 30%;
+    }
+
+    /* Other columns */
+    .col i, p, h2{
+        padding: 10px 0px;    
+    }
+
+}
+/* /media query for tablet - Feature Section */
+
+/* media query for desktop - planning section */
+@media screen and (min-width: 992px) {
+    .small-container{
+        position: relative;
+        width: 70%;
+        max-width: 1200px;
+        flex-direction: row;
+    }
+
+    .plannig-strategy{
+        width: 60%;
+    }
+
+    .plannig-strategy img{
+        width: 80%;
+    }
+
+    .plannig-strategy p{
+        width: 90%;
+    }
+
+    .app-development{
+        width: 40%;
+        justify-content: flex-end;
+    }
+
+    .app-development h2{
+        padding-top: 1rem;
+    }
+
+    .app-development p{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+/* /media query for desktop - planning section */
+
+/* media query for tablets - testimonial section */
+@media screen and (min-width: 768px) {
+    .testimonial-card{
+        flex-direction: row;
+    }
+
+    .testimonial-card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .testimonial-card-content p {
+        padding: 0px 0px 50px ;
+        text-align: left;
+    }
+
+    .testimonial-card-content h3{
+        padding: 0px;
+        text-align: left;
+    }
+}
+/* /media query for tablets - testimonial section */
+
+/* media query for tablets - benefits section */
+@media screen and (min-width: 768px) {
+    .benefit-card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .benefit-card{
+        width: calc(100% / 2 - 20px);
+
+    }
+}
+/* /media query for tablets - benefits section */
+
+/* media query for desktop - benefits section */
+@media screen and (min-width: 992px) {
+    .benefit-card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .benefit-card{
+        width: calc(100% / 3 - 20px);
+    }
+
+    .benefit-card h2{
+        padding: 10px;
+
+    }
+
+    .benefit-card h3{
+        padding: 10px;
+    }
+    
+    .benefit-card p{
+        padding: 10px 10px 50px;
+    }
+
+    .btn-more{
+        padding: 0px 10px 50px
+    }
+}
+/* /media query for desktop - benefits section */
+
+/* media query for tablets - about us section */
+@media screen and (min-width: 768px){
+    .about-content{
+        display: flex;
+    }
+
+    .about-top p{
+        padding-right: 30px;
+    }
+
+    .about-bottom h2{
+        padding-left: 0;
+    }
+
+    .about-bottom div{
+        padding-left: 0;
+    }
+
+    .about-bottom span{
+        position: absolute;
+        left: 80%;
+        font-size: 3rem;
+        color: rgba(0, 132, 253, 1);
+    }
+}
+/* /media query for tablets - about us section */
+
+/* media query for desktop - about us section */
+@media screen and (min-width: 992px) {
+    .about-bottom span{
+        left: 73%;
+    }
+}
+/* /media query for desktop - about us section */
+
+/* media query for tablets - getting started section */
+@media screen and (min-width: 768px) {
+    .extra-small-container{
+        width: 60%;
+        max-width: 1000px;
+    }
+}
+/* /media query for tablets - getting started section */
