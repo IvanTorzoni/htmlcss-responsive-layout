@@ -673,3 +673,23 @@ header{
         max-width: 1000px;
     }
 }
+/* /media query for tablets - getting started section */
+
+footer{
+    background-color: black;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p{
+    color: white;
+}
+
+.footer-content span{
+    text-decoration: underline;
+    color: rgba(115, 111, 164, 1);
+}
